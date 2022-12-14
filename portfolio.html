@@ -20,63 +20,64 @@
 
   <html>
     <!-- Шапка сайта -->
-    <div class="container">
-    <header class="header">
-      <nav>
-        <a href="./index.html" class="logo">
-          <span class="logo-webstudio">Web</span>Studio</a
-        >
+    <header class="header main-nav container">
+      <nav class="logo-top">
+        <a href="./index.html" class="logo ">
+          <span class="logo-webstudio ">Web</span>Studio</a>
 
-        <ul class="nav-list list">
-          <li><a href="./index.html" class="nav-item list">Студия</a></li>
-          <li>
-            <a href="./portfolio.html" class="nav-item active list"
-              >Портфолио</a
-            >
+        <ul class="nav-lis list nav-lis">
+          <li class="item">
+            <a href="./index.html" class="nav-item active list">Studio</a>
           </li>
-          <li><a href="" class="nav-item list">Контакты</a></li>
+          <li class="item">
+            <a href="./portfolio.html" class="nav-item list">Portfolio</a>
+          </li>
+          <li class="item"><a href="" class="nav-item list">Contacts</a>
+          </li>
         </ul>
       </nav>
 
-      <a href="mailto:info@devstudio.com" class="nav-item nav-contacts"
-        >info@devstudio.com</a
-      >
-      <a href="tel:+38096111111" class="nav-item nav-contacts">+380961111111</a>
+       <ul class=" nav-lis-contact list">
+        <li><a href="mailto:info@devstudio.com" class="nav-item nav-contacts-pos"
+          >info@devstudio.com</a
+        ></li>
+        <li><a href="tel:+38096111111" class="nav-item nav-tel">+380961111111</a></li>
+       </ul> 
+      
     </header>
-   </div>
 
     <main>
-      <section class="section">
+      <section class="section container">
         <h1 class="title">Портфолио</h1>
         <h2 class="card-title"></h2>
-        <ul class="list">
-          <li>
+        <ul class="list nav-portf">
+          <li class="items">
             <button type="button" class="portfolio-button secondary portfolio-button-filter">Все</button>
           </li>
-          <li>
+          <li class="items">
             <button type="button" class="portfolio-button secondary portfolio-button-filter">
               Веб-сайты
             </button>
           </li>
-          <li>
+          <li class="items">
             <button type="button" class="portfolio-button secondary portfolio-button-filter">
               Приложения
             </button>
-          </li>
-          <li>
+          </li >
+          <li class="items">
             <button type="button" class="portfolio-button secondary portfolio-button-filter">
               Дизайн
             </button>
           </li>
-          <li>
+          <li class="items">
             <button type="button" class="portfolio-button secondary portfolio-button-filter">
               Маркетинг
             </button>
           </li>
         </ul>
 
-        <ul class="list">
-          <li>
+        <ul class="list project">
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-1.jpg"
@@ -87,9 +88,9 @@
               <h2 class="card-title">Технокряк</h2>
               <p class="example-list">Веб-сайт</p>
             </a>
-          </li>
+          </li >
 
-          <li>
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-2.jpg"
@@ -102,7 +103,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-3.jpg"
@@ -113,9 +114,9 @@
               <h2 class="card-title">Ресторан Seafood</h2>
               <p class="example-list">Приложение</p>
             </a>
-          </li>
+          </li >
 
-          <li>
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-4.jpg"
@@ -128,7 +129,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-5.jpg"
@@ -141,7 +142,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-6.jpg"
@@ -154,7 +155,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-7.jpg"
@@ -167,7 +168,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-8.jpg"
@@ -180,7 +181,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="items">
             <a href="#" class="link">
               <img
                 src="./images/example-9.jpg"
@@ -199,20 +200,26 @@
     <!-- Футер -->
 
     <body>
-      <footer class="footer-list">
-        <a href="./index.html" class="logo-footer">
+      <footer class="footer-list ">
+
+        <div class="container">
+        <a href="./index.html" class="logo-footer ">
           <span class="logo-webstudio-footer">Web</span>Studio</a
         >
   
-        <address class="style">
-          <p>г. Киев, пр-т Леси Украинки, 26,</p>
-          <a href="mailto:info@example.com link" class="nav-item nav-contacts contact-list"
-            >info@example.com</a
-          >
-          <a href="tel:+380991111111 link" class="nav-item nav-contacts contact-list"
-            >+380991111111</a
-          >
-      </address>
+        <address class="style"> 
+          <ul class="address list "  >
+             <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="nav-item nav-contacts contact-list link">м. Київ, пр-т Лесі Украінки, 26</a> 
+             </li>
+             <li><a href="mailto:info@example.com " class="nav-item nav-contacts contact-list link">info@example.com
+               </a>
+             </li>
+             <li><a href="tel:+380991111111 " class="nav-item nav-contacts contact-list link">+380991111111
+               </a>
+             </li>
+           </ul>
+             
+        </address>
     </footer>
   </body>
 </html>

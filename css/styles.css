@@ -41,6 +41,77 @@ body {
     padding-right: 15px;
   
 }
+
+.main-nav
+{
+  display: flex;
+  align-items: center;
+}
+
+.logo-top
+{
+  display: flex  ;
+  align-items: center;
+}
+
+
+.nav-lis {
+  display: flex;
+  margin-left: 93px;
+  padding-left: 0;
+}
+
+.nav-lis-contact
+{
+  display: flex;
+  margin-left: 0px;
+  padding-left: 0;
+}
+
+.nav-lis .nav-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+  
+ }
+
+.nav-lis .item:not(:last-child)
+{
+/* outline: 1px solid red; */
+margin-right: 50px;
+}
+
+.nav-contacts-pos
+{
+ /*margin-left: auto;*/
+ margin-left: 385px;
+}
+
+.nav-tel {
+  /*margin-left: auto;*/
+  margin-left: 40px;
+  /* margin-left: 560px; */
+}
+
+.button-hero
+{
+  display: flex;
+  margin: auto;
+ /* 
+  justify-content: center;
+  align-items: center;
+  
+    text-align: center;
+    justify-content: center;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  */
+  
+  
+}
+
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
@@ -84,6 +155,7 @@ body {
 
 /* Logo */
 .logo {
+
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -93,6 +165,7 @@ body {
   text-decoration: none;
 }
 .logo-webstudio {
+
   color: var(--accent-color);
   font-weight: 700;
   font-size: 26px;
@@ -116,6 +189,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  
 }
 .nav-item.active {
  
@@ -129,6 +203,7 @@ body {
 .nav-item:focus {
   color: var(--accent-color);
 }
+
 .nav-contacts {
   
   color: var(--text-color);
@@ -182,16 +257,58 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
+
 /* Features */
 
 .feature-list {
+  display: flex;
+  padding-left: 0;
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.7;
 }
 
+
+.features-flex
+{
+  /* width: 270px; */
+   width: calc((1170-60)/4);
+  flex-wrap: wrap;
+  /* background: tomato; */
+  /* margin-right: 30px; */
+  /* justify-content: right; */
+  
+}
+
+.features-flex:nth-child(4n)
+ {
+  margin: 0;
+ }
+
+/* Opotunities */
+
+.work-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  /* background: tomato  ; */
+  padding-left: 0;
+}
+
+.work-exp
+{
+  margin-right: 30px;
+}
+
+.work-exp:nth-child(3n)
+{
+  margin: 0;
+}
+ 
 /* Team */
 .team-list {
+  
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.18;
@@ -199,7 +316,39 @@ body {
   background-color: var(--bg-color-for-team);
 }
 
+.team-list-pr {
+ 
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.team-flex
+{
+  display: flex;
+  padding-left: 0;
+  
+}
+
+.team-li
+{
+
+margin-right: 30px;
+} 
+
+  .team-li:nth-child(4n)
+{
+  margin: 0;
+}
+
+
 /* Examples */
+
+
+
+
 
 .example-list {
   color: var(--text-color);
@@ -208,6 +357,15 @@ body {
 }
 
 /* Footer */
+
+.address{
+padding-left: 0;
+/* text-align: left;  */
+ /* background: tomato; */
+/* margin-right: 30px; */
+/* justify-content: right; */
+}
+
 .footer-list{
 color:var(--text-color-for-footer);
 background-color:var(--bg-color-for-footer);
@@ -215,7 +373,9 @@ background-color:var(--bg-color-for-footer);
 } 
 .contact-list{
   color:var(--second-color-for-footer);
+ 
  } 
+
 .logo-footer {
   color: var(--white-color);
   font-family: Raleway, sans-serif;
@@ -232,6 +392,8 @@ background-color:var(--bg-color-for-footer);
   font-size: 26px;
   line-height: 1.2px;
  }
+
+ 
 
 /* buttons */
 
@@ -273,4 +435,51 @@ background-color:var(--bg-color-for-footer);
 .portfolio-button-filter:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+/* Portfolio examples */
+
+.section .title {
+  text-align: center;
+  /* text-align: left;  */
+ /* background: tomato; */
+/* margin-right: 30px; */
+/* justify-content: right; */
+/* align-items: center; */
+}
+
+/* Portfolio navi */
+
+.nav-portf{
+
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  
+}
+
+.nav-portf .items{
+    margin-right: 8px;
+}
+
+.nav-portf .items:nth-child(5n){
+  margin: 0px;
+}
+
+/* Portfolio Exeples */
+
+.project {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project .items {
+  
+  margin-right: 30px;
+}
+
+.project .items:nth-child(3n) {
+
+  margin-right: 0px;
 }
